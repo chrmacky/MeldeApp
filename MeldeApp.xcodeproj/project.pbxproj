@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8696D86F216CBBC6008D97DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8696D86E216CBBC6008D97DE /* AppDelegate.swift */; };
+		8696D871216CBBC6008D97DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8696D870216CBBC6008D97DE /* ViewController.swift */; };
+		8696D874216CBBC6008D97DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8696D872216CBBC6008D97DE /* Main.storyboard */; };
+		8696D877216CBBC6008D97DE /* MeldeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8696D875216CBBC6008D97DE /* MeldeApp.xcdatamodeld */; };
+		8696D879216CBBC7008D97DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8696D878216CBBC7008D97DE /* Assets.xcassets */; };
+		8696D87C216CBBC7008D97DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8696D87A216CBBC7008D97DE /* LaunchScreen.storyboard */; };
+		8696D887216CBBC7008D97DE /* MeldeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8696D886216CBBC7008D97DE /* MeldeAppTests.swift */; };
+		8696D892216CBBC7008D97DE /* MeldeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8696D891216CBBC7008D97DE /* MeldeAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8696D883216CBBC7008D97DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8696D863216CBBC6008D97DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8696D86A216CBBC6008D97DE;
+			remoteInfo = MeldeApp;
+		};
+		8696D88E216CBBC7008D97DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8696D863216CBBC6008D97DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8696D86A216CBBC6008D97DE;
+			remoteInfo = MeldeApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8696D86B216CBBC6008D97DE /* MeldeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeldeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8696D86E216CBBC6008D97DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8696D870216CBBC6008D97DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8696D873216CBBC6008D97DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8696D876216CBBC6008D97DE /* MeldeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeldeApp.xcdatamodel; sourceTree = "<group>"; };
+		8696D878216CBBC7008D97DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8696D87B216CBBC7008D97DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8696D87D216CBBC7008D97DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8696D882216CBBC7008D97DE /* MeldeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeldeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8696D886216CBBC7008D97DE /* MeldeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeldeAppTests.swift; sourceTree = "<group>"; };
+		8696D888216CBBC7008D97DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8696D88D216CBBC7008D97DE /* MeldeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeldeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8696D891216CBBC7008D97DE /* MeldeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeldeAppUITests.swift; sourceTree = "<group>"; };
+		8696D893216CBBC7008D97DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8696D868216CBBC6008D97DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8696D87F216CBBC7008D97DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8696D88A216CBBC7008D97DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8696D862216CBBC6008D97DE = {
+			isa = PBXGroup;
+			children = (
+				8696D86D216CBBC6008D97DE /* MeldeApp */,
+				8696D885216CBBC7008D97DE /* MeldeAppTests */,
+				8696D890216CBBC7008D97DE /* MeldeAppUITests */,
+				8696D86C216CBBC6008D97DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8696D86C216CBBC6008D97DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8696D86B216CBBC6008D97DE /* MeldeApp.app */,
+				8696D882216CBBC7008D97DE /* MeldeAppTests.xctest */,
+				8696D88D216CBBC7008D97DE /* MeldeAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8696D86D216CBBC6008D97DE /* MeldeApp */ = {
+			isa = PBXGroup;
+			children = (
+				8696D86E216CBBC6008D97DE /* AppDelegate.swift */,
+				8696D870216CBBC6008D97DE /* ViewController.swift */,
+				8696D872216CBBC6008D97DE /* Main.storyboard */,
+				8696D878216CBBC7008D97DE /* Assets.xcassets */,
+				8696D87A216CBBC7008D97DE /* LaunchScreen.storyboard */,
+				8696D87D216CBBC7008D97DE /* Info.plist */,
+				8696D875216CBBC6008D97DE /* MeldeApp.xcdatamodeld */,
+			);
+			path = MeldeApp;
+			sourceTree = "<group>";
+		};
+		8696D885216CBBC7008D97DE /* MeldeAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8696D886216CBBC7008D97DE /* MeldeAppTests.swift */,
+				8696D888216CBBC7008D97DE /* Info.plist */,
+			);
+			path = MeldeAppTests;
+			sourceTree = "<group>";
+		};
+		8696D890216CBBC7008D97DE /* MeldeAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8696D891216CBBC7008D97DE /* MeldeAppUITests.swift */,
+				8696D893216CBBC7008D97DE /* Info.plist */,
+			);
+			path = MeldeAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8696D86A216CBBC6008D97DE /* MeldeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8696D896216CBBC7008D97DE /* Build configuration list for PBXNativeTarget "MeldeApp" */;
+			buildPhases = (
+				8696D867216CBBC6008D97DE /* Sources */,
+				8696D868216CBBC6008D97DE /* Frameworks */,
+				8696D869216CBBC6008D97DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeldeApp;
+			productName = MeldeApp;
+			productReference = 8696D86B216CBBC6008D97DE /* MeldeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8696D881216CBBC7008D97DE /* MeldeAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8696D899216CBBC7008D97DE /* Build configuration list for PBXNativeTarget "MeldeAppTests" */;
+			buildPhases = (
+				8696D87E216CBBC7008D97DE /* Sources */,
+				8696D87F216CBBC7008D97DE /* Frameworks */,
+				8696D880216CBBC7008D97DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8696D884216CBBC7008D97DE /* PBXTargetDependency */,
+			);
+			name = MeldeAppTests;
+			productName = MeldeAppTests;
+			productReference = 8696D882216CBBC7008D97DE /* MeldeAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8696D88C216CBBC7008D97DE /* MeldeAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8696D89C216CBBC7008D97DE /* Build configuration list for PBXNativeTarget "MeldeAppUITests" */;
+			buildPhases = (
+				8696D889216CBBC7008D97DE /* Sources */,
+				8696D88A216CBBC7008D97DE /* Frameworks */,
+				8696D88B216CBBC7008D97DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8696D88F216CBBC7008D97DE /* PBXTargetDependency */,
+			);
+			name = MeldeAppUITests;
+			productName = MeldeAppUITests;
+			productReference = 8696D88D216CBBC7008D97DE /* MeldeAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8696D863216CBBC6008D97DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Christoph Lemke";
+				TargetAttributes = {
+					8696D86A216CBBC6008D97DE = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					8696D881216CBBC7008D97DE = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 8696D86A216CBBC6008D97DE;
+					};
+					8696D88C216CBBC7008D97DE = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 8696D86A216CBBC6008D97DE;
+					};
+				};
+			};
+			buildConfigurationList = 8696D866216CBBC6008D97DE /* Build configuration list for PBXProject "MeldeApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8696D862216CBBC6008D97DE;
+			productRefGroup = 8696D86C216CBBC6008D97DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8696D86A216CBBC6008D97DE /* MeldeApp */,
+				8696D881216CBBC7008D97DE /* MeldeAppTests */,
+				8696D88C216CBBC7008D97DE /* MeldeAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8696D869216CBBC6008D97DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8696D87C216CBBC7008D97DE /* LaunchScreen.storyboard in Resources */,
+				8696D879216CBBC7008D97DE /* Assets.xcassets in Resources */,
+				8696D874216CBBC6008D97DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8696D880216CBBC7008D97DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8696D88B216CBBC7008D97DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8696D867216CBBC6008D97DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8696D871216CBBC6008D97DE /* ViewController.swift in Sources */,
+				8696D86F216CBBC6008D97DE /* AppDelegate.swift in Sources */,
+				8696D877216CBBC6008D97DE /* MeldeApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8696D87E216CBBC7008D97DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8696D887216CBBC7008D97DE /* MeldeAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8696D889216CBBC7008D97DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8696D892216CBBC7008D97DE /* MeldeAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8696D884216CBBC7008D97DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8696D86A216CBBC6008D97DE /* MeldeApp */;
+			targetProxy = 8696D883216CBBC7008D97DE /* PBXContainerItemProxy */;
+		};
+		8696D88F216CBBC7008D97DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8696D86A216CBBC6008D97DE /* MeldeApp */;
+			targetProxy = 8696D88E216CBBC7008D97DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8696D872216CBBC6008D97DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8696D873216CBBC6008D97DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8696D87A216CBBC7008D97DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8696D87B216CBBC7008D97DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8696D894216CBBC7008D97DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8696D895216CBBC7008D97DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8696D897216CBBC7008D97DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeldeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.lemar.MeldeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8696D898216CBBC7008D97DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeldeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.lemar.MeldeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8696D89A216CBBC7008D97DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeldeAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.lemar.MeldeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeldeApp.app/MeldeApp";
+			};
+			name = Debug;
+		};
+		8696D89B216CBBC7008D97DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeldeAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.lemar.MeldeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeldeApp.app/MeldeApp";
+			};
+			name = Release;
+		};
+		8696D89D216CBBC7008D97DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeldeAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.lemar.MeldeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeldeApp;
+			};
+			name = Debug;
+		};
+		8696D89E216CBBC7008D97DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeldeAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.lemar.MeldeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeldeApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8696D866216CBBC6008D97DE /* Build configuration list for PBXProject "MeldeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8696D894216CBBC7008D97DE /* Debug */,
+				8696D895216CBBC7008D97DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8696D896216CBBC7008D97DE /* Build configuration list for PBXNativeTarget "MeldeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8696D897216CBBC7008D97DE /* Debug */,
+				8696D898216CBBC7008D97DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8696D899216CBBC7008D97DE /* Build configuration list for PBXNativeTarget "MeldeAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8696D89A216CBBC7008D97DE /* Debug */,
+				8696D89B216CBBC7008D97DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8696D89C216CBBC7008D97DE /* Build configuration list for PBXNativeTarget "MeldeAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8696D89D216CBBC7008D97DE /* Debug */,
+				8696D89E216CBBC7008D97DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8696D875216CBBC6008D97DE /* MeldeApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8696D876216CBBC6008D97DE /* MeldeApp.xcdatamodel */,
+			);
+			currentVersion = 8696D876216CBBC6008D97DE /* MeldeApp.xcdatamodel */;
+			path = MeldeApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8696D863216CBBC6008D97DE /* Project object */;
+}
