@@ -19,44 +19,12 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     @IBOutlet weak var originatorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // TODO auslagern
-        // Set progressView on value 0.0, scale the view by 4
+        // handle the user inpiut througt delegate callbacks
+        reportTextField.delegate = self
+        descReportTextField.delegate = self
         reportProgressView.progress = 0.0
-        reportProgressView.transform = reportProgressView.transform.scaledBy(x: 1, y: 4)
     }
-    // TODO: seperate Classe oder Controller
-    func updateProgress(){
-        var value: Float = reportProgressView.progress
-        value += 0.3
-        let roundedValue = roundf(value * 100) / 100
-        reportProgressView.progress = roundedValue
-        
-        switch roundedValue {
-        case 0.0,
-            0.1,
-            0.2,
-            0.3:
-            print(roundedValue)
-            reportProgressView.progressTintColor = UIColor.red
-        case 0.4,
-             0.5,
-             0.6:
-            print(roundedValue)
-            reportProgressView.progressTintColor = UIColor.yellow
-        case 0.7,
-             0.8,
-             0.9,
-             1.0:
-            print(roundedValue)
-            reportProgressView.progressTintColor = UIColor.green
-            reportProgressView.progress = 1.0
-        default:
-            if roundedValue >= 1.0 {
-                reportProgressView.progress = 0.0
-            }
-        }
-    }
+    
 
     //MARK: UIImagePickerControllerDelegate
     
@@ -92,7 +60,10 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     }
     // Soll später über zufall verteilt werden
     @IBAction func progressBtnTapped(_ sender: UIButton) {
-        updateProgress()
+        let progressControl = ProgressControl()
+        let (progressValue, progressColor) = progressControl.updateProgress(progressValue: reportProgressView.progress)
+        reportProgressView.progress = progressValue
+        reportProgressView.progressTintColor = progressColor
     }
     
 }
