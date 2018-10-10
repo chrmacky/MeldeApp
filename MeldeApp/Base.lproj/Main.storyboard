@@ -52,9 +52,27 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Z62-3t-T9u">
-                                <rect key="frame" x="10" y="294" width="150" height="2"/>
+                                <rect key="frame" x="108" y="323" width="159" height="20.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JsO-73-LX4">
+                                <rect key="frame" x="108" y="323" width="159" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Bearbeiter:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNz-Ns-beL">
+                                        <rect key="frame" x="0.0" y="0.0" width="84.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="&lt;Name&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INB-TK-Qqv">
+                                        <rect key="frame" x="92.5" y="0.0" width="66.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="E8O-A1-iur"/>
@@ -68,6 +86,73 @@
             <point key="canvasLocation" x="-1449" y="79"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="qdL-Yn-kmi">
+            <objects>
+                <viewController id="bI3-Rv-0tC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f4S-12-ZgS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="F23-3H-meR">
+                                <rect key="frame" x="16" y="27" width="343" height="322"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZxZ-2C-HQr">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="2"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Art der Meldung" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mne-aY-cDg">
+                                        <rect key="frame" x="0.0" y="10" width="124.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p8W-bv-ujc">
+                                        <rect key="frame" x="0.0" y="38.5" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bild der Meldnung" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaE-G0-HW0">
+                                        <rect key="frame" x="0.0" y="76.5" width="139.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S6r-At-WV2">
+                                        <rect key="frame" x="0.0" y="105" width="160" height="160"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Meldung wird bearbeitet von" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lf-hC-ndB">
+                                        <rect key="frame" x="0.0" y="273" width="219" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="&lt;Name&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxD-4A-bkc">
+                                        <rect key="frame" x="0.0" y="301.5" width="66.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="p8W-bv-ujc" secondAttribute="trailing" id="Jwm-gc-Jgb"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZxZ-2C-HQr" secondAttribute="trailing" id="MbB-iT-xvf"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="F23-3H-meR" firstAttribute="leading" secondItem="Gyb-q2-310" secondAttribute="leading" constant="16" id="9Er-V5-l1A"/>
+                            <constraint firstItem="F23-3H-meR" firstAttribute="top" secondItem="Gyb-q2-310" secondAttribute="top" id="HLZ-Sf-HER"/>
+                            <constraint firstItem="Gyb-q2-310" firstAttribute="trailing" secondItem="F23-3H-meR" secondAttribute="trailing" constant="16" id="VCA-Th-V8i"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gyb-q2-310"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gu8-XI-HLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2391.1999999999998" y="187.55622188905548"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="kFW-iD-srk">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="Xbe-Bm-dDA" customClass="ViewController" customModule="MeldeApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -76,47 +161,71 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YJJ-K7-ZyZ">
-                                <rect key="frame" x="8" y="40" width="359" height="530.5"/>
+                                <rect key="frame" x="8" y="40" width="359" height="654"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Art der Meldung" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCj-Ex-mth">
-                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Cz-xM-Uwy">
-                                        <rect key="frame" x="0.0" y="28.5" width="359" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bild der Meldung" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIh-lh-9Ip">
-                                        <rect key="frame" x="0.0" y="66.5" width="130" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="SHT-GM-2cU">
-                                        <rect key="frame" x="0.0" y="95" width="359" height="359"/>
-                                        <gestureRecognizers/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="SHT-GM-2cU" secondAttribute="height" multiplier="1:1" id="CMm-rg-ybU"/>
-                                        </constraints>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="C8d-aS-QFh" appends="YES" id="wJF-Kt-mAN"/>
-                                        </connections>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fortschritt der Meldung" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqK-sR-MbI">
-                                        <rect key="frame" x="0.0" y="462" width="181.5" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fortschritt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqK-sR-MbI">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fbw-Sd-7Tu">
-                                        <rect key="frame" x="0.0" y="490.5" width="359" height="2"/>
+                                        <rect key="frame" x="0.0" y="28.5" width="359" height="2"/>
                                     </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Art der Meldung" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCj-Ex-mth">
+                                        <rect key="frame" x="0.0" y="38.5" width="124.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Cz-xM-Uwy">
+                                        <rect key="frame" x="0.0" y="67" width="359" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beschreibung" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NX-Gr-WG3">
+                                        <rect key="frame" x="0.0" y="105" width="105.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZAG-VN-9Zq">
+                                        <rect key="frame" x="0.0" y="133.5" width="359" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bild der Meldung" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIh-lh-9Ip">
+                                        <rect key="frame" x="0.0" y="171.5" width="130" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="SHT-GM-2cU">
+                                        <rect key="frame" x="0.0" y="200" width="359" height="359"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="SHT-GM-2cU" secondAttribute="height" multiplier="1:1" id="CMm-rg-ybU"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="19f-km-0eq" appends="YES" id="yaa-Qh-Aia"/>
+                                        </connections>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meldung wird bearbeitet von" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nir-Fg-gey">
+                                        <rect key="frame" x="0.0" y="567" width="219" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Name&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNS-Bg-Bk3">
+                                        <rect key="frame" x="0.0" y="595.5" width="66.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFy-DD-1FT">
-                                        <rect key="frame" x="0.0" y="500.5" width="114" height="30"/>
+                                        <rect key="frame" x="0.0" y="624" width="114" height="30"/>
                                         <state key="normal" title="Set the Progress"/>
                                         <connections>
                                             <action selector="progressBtnTapped:" destination="Xbe-Bm-dDA" eventType="touchUpInside" id="l6r-rd-8kd"/>
@@ -126,6 +235,7 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="0Cz-xM-Uwy" secondAttribute="trailing" id="7aX-HV-ydw"/>
                                     <constraint firstItem="0Cz-xM-Uwy" firstAttribute="leading" secondItem="YJJ-K7-ZyZ" secondAttribute="leading" id="URr-jE-w19"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZAG-VN-9Zq" secondAttribute="trailing" id="ZDK-hw-UgQ"/>
                                     <constraint firstAttribute="trailing" secondItem="fbw-Sd-7Tu" secondAttribute="trailing" id="cj0-FA-45y"/>
                                     <constraint firstItem="fbw-Sd-7Tu" firstAttribute="leading" secondItem="YJJ-K7-ZyZ" secondAttribute="leading" id="eOS-7K-VhJ"/>
                                     <constraint firstItem="fbw-Sd-7Tu" firstAttribute="top" secondItem="AqK-sR-MbI" secondAttribute="bottom" constant="8" id="iFW-LP-6VK"/>
@@ -141,14 +251,19 @@
                         <viewLayoutGuide key="safeArea" id="e9h-sh-KCR"/>
                     </view>
                     <connections>
+                        <outlet property="descReportTextField" destination="ZAG-VN-9Zq" id="Maz-Nc-oob"/>
+                        <outlet property="originatorLabel" destination="bNS-Bg-Bk3" id="OTi-hB-JA1"/>
                         <outlet property="reportImageView" destination="SHT-GM-2cU" id="fbR-0F-Is4"/>
                         <outlet property="reportProgressView" destination="fbw-Sd-7Tu" id="Tkc-LF-Ofi"/>
                         <outlet property="reportTextField" destination="0Cz-xM-Uwy" id="mno-I7-GCh"/>
-                        <outlet property="selectImageFromLibrary" destination="C8d-aS-QFh" id="3Ez-2D-VBG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TCQ-fV-efV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="C8d-aS-QFh"/>
+                <tapGestureRecognizer id="19f-km-0eq">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="Xbe-Bm-dDA" id="HNa-ZD-5O6"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-578" y="79"/>
         </scene>

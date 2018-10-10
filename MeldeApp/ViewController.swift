@@ -8,16 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     //MARK: Properties
     @IBOutlet weak var reportTextField: UITextField!
     @IBOutlet weak var reportImageView: UIImageView!
     @IBOutlet weak var reportProgressView: UIProgressView!
     
+    @IBOutlet weak var descReportTextField: UITextField!
+    @IBOutlet weak var originatorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // TODO auslagern
+        // Set progressView on value 0.0, scale the view by 4
         reportProgressView.progress = 0.0
+        reportProgressView.transform = reportProgressView.transform.scaledBy(x: 1, y: 4)
     }
     // TODO: seperate Classe oder Controller
     func updateProgress(){
@@ -52,8 +58,38 @@ class ViewController: UIViewController {
         }
     }
 
+    //MARK: UIImagePickerControllerDelegate
+    
+    // close the picker if the user cancel the picker
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        // discard the picker, if the user canceled
+        dismiss(animated: true, completion: nil)
+    }
+    
+    // the user select a photo from their own library
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        //only use the original image
+        guard let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage else{
+            fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
+        }
+        //set the image to display
+        reportImageView.image = selectedImage
+        // discard the picker, if the user canceled
+        dismiss(animated: true, completion: nil)
+    }
     //MARK: Action
-    @IBOutlet var selectImageFromLibrary: UITapGestureRecognizer!
+    @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
+        //Hide the keyboard
+        reportProgressView.resignFirstResponder()
+        descReportTextField.resignFirstResponder()
+        // UIImagePickerController is a view controller that lets a user pick media from their own photo library
+        let imagePickerController = UIImagePickerController()
+        // only picked photos, not taken
+        imagePickerController.sourceType = .photoLibrary
+        // make sure viewcontroller is notified when user picks an image
+        imagePickerController.delegate = self
+        present(imagePickerController, animated: true, completion: nil)
+    }
     // Soll später über zufall verteilt werden
     @IBAction func progressBtnTapped(_ sender: UIButton) {
         updateProgress()
