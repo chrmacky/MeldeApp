@@ -13,11 +13,6 @@ class ProgressControl: UIProgressView {
     //MARK: Initialization
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        // TODO auslagern
-        // Set progressView on value 0.0, scale the view by 4
-        //  reportProgressView.progress = 0.0
-        //  reportProgressView.transform = reportProgressView.transform.scaledBy(x: 1, y: 4)
     }
     
     required init?(coder: NSCoder) {
@@ -26,25 +21,24 @@ class ProgressControl: UIProgressView {
     
     
     // TODO: update the color for smaller details and update the call for update
+    // TODO: if the value greater then 0.0, the originator must be update
     func updateProgress(progressValue: Float) -> (Float, UIColor){
         var value: Float = progressValue
         var color: UIColor = UIColor.blue
         // delete the call, if the progress is processed via the originator
-        value += 0.01
+        value += 0.1
         let roundedValue = roundf(value * 100) / 100
         
         switch roundedValue {
         case 0.0,
              0.1,
              0.2:
-           // print(roundedValue)
             color = UIColor.red
         case 0.3,
              0.4:
             color = UIColor.orange
         case 0.5,
              0.6:
-            //print(roundedValue)
             color = UIColor.yellow
         case 0.7,
              0.8:
