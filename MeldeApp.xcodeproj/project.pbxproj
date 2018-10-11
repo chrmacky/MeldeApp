@@ -18,6 +18,7 @@
 		8696D8A6216E069C008D97DE /* ProgressControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8696D8A5216E069C008D97DE /* ProgressControl.swift */; };
 		8696D8DA216F3FA1008D97DE /* ReportDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8696D8D9216F3FA1008D97DE /* ReportDetail.swift */; };
 		8696D8DC216F44DC008D97DE /* ReportDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8696D8DB216F44DC008D97DE /* ReportDetailTableViewCell.swift */; };
+		8696D8DE216F54D1008D97DE /* ReportDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8696D8DD216F54D1008D97DE /* ReportDetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		8696D8A5216E069C008D97DE /* ProgressControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressControl.swift; sourceTree = "<group>"; };
 		8696D8D9216F3FA1008D97DE /* ReportDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDetail.swift; sourceTree = "<group>"; };
 		8696D8DB216F44DC008D97DE /* ReportDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDetailTableViewCell.swift; sourceTree = "<group>"; };
+		8696D8DD216F54D1008D97DE /* ReportDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				8696D8D9216F3FA1008D97DE /* ReportDetail.swift */,
 				8696D8A5216E069C008D97DE /* ProgressControl.swift */,
 				8696D872216CBBC6008D97DE /* Main.storyboard */,
+				8696D8DD216F54D1008D97DE /* ReportDetailTableViewController.swift */,
 				8696D8DB216F44DC008D97DE /* ReportDetailTableViewCell.swift */,
 				8696D878216CBBC7008D97DE /* Assets.xcassets */,
 				8696D87A216CBBC7008D97DE /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8696D8DE216F54D1008D97DE /* ReportDetailTableViewController.swift in Sources */,
 				8696D871216CBBC6008D97DE /* ViewController.swift in Sources */,
 				8696D8DA216F3FA1008D97DE /* ReportDetail.swift in Sources */,
 				8696D8A6216E069C008D97DE /* ProgressControl.swift in Sources */,

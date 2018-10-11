@@ -10,6 +10,13 @@ import UIKit
 
 class ReportDetailTableViewCell: UITableViewCell {
 
+    //MARK: Properties
+    
+    @IBOutlet weak var reportName: UILabel!
+    @IBOutlet weak var reportOriginator: UILabel!
+    @IBOutlet weak var reportProgress: ProgressControl!
+    @IBOutlet weak var reportPhotoImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
