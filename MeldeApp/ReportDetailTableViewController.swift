@@ -7,21 +7,17 @@
 //
 
 import UIKit
+import Foundation
 
 class ReportDetailTableViewController: UITableViewController {
 
     //MARK: Properties
     var reportDetails = [ReportDetail]()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        //load the sample Data of reports
+        loadSampleData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,23 +29,33 @@ class ReportDetailTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return reportDetails.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        // Table view cells are reused and should be dequeued using a cell identifier.
+        let cellIdentifier = "ReportDetailTableViewCell"
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ReportDetailTableViewCell  else {
+            fatalError("The dequeued cell is not an instance of ReportDetailTableViewCell.")
+        }
+        
+        // Fetches the appropriate meal for the data source layout.
+        let report = reportDetails[indexPath.row]
+        
+        cell.reportName.text = report.reportName
+        cell.reportProgress.progress = report.reportProgress
+        cell.reportPhotoImageView.image = report.reportImage
+        cell.reportOriginator.text = "nicht bearbeitbar"
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.
@@ -96,4 +102,24 @@ class ReportDetailTableViewController: UITableViewController {
     }
     */
 
+    //MARK: private methods
+    func loadSampleData(){
+        let photo1 = UIImage(named: "report1")
+        let photo2 = UIImage(named: "report2")
+        let photo3 = UIImage(named: "report3")
+        
+       
+        
+        guard let report1 = ReportDetail(name: "Zahnrade rollt raus", desc: "Wenn die Maschine anspringt, geht sie sofort wieder in den Rugeschlaf und fängt von vorn an.", progress: 0.0, photo: photo1) else {
+            fatalError("Unable to instantiate report1")
+        }
+        guard let report2 = ReportDetail(name: "Kaffe im Wasser", desc: "", progress: 0.4, photo: photo2) else {
+            fatalError("Unable to instantiate report2")
+        }
+        guard let report3 = ReportDetail(name: "Maschine Pumpt kein Wasser ab", desc: "In der Trommel bleibt das gesamte Wasser stehen.", progress: 0.7, photo: photo3) else {
+            fatalError("Unable to instantiate report3")
+        }
+        reportDetails += [report1, report2, report3]
+        
+    }
 }

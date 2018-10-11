@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Report Detail Table View Controller-->
         <scene sceneID="TUj-b5-jgM">
             <objects>
-                <tableViewController id="cB0-ci-ybq" sceneMemberID="viewController">
+                <tableViewController id="cB0-ci-ybq" customClass="ReportDetailTableViewController" customModule="MeldeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="71A-2q-n7e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,23 +33,23 @@
                                                 <constraint firstAttribute="width" constant="90" id="yft-hx-7YB"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="MeldeName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icn-If-C5b">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MeldeName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icn-If-C5b">
                                             <rect key="frame" x="106" y="11" width="92" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QGh-yH-P2w" customClass="ProgressControl" customModule="MeldeApp" customModuleProvider="target">
+                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QGh-yH-P2w" customClass="ProgressControl" customModule="MeldeApp" customModuleProvider="target">
                                             <rect key="frame" x="106" y="35" width="253" height="2"/>
                                         </progressView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Bearbeiter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lG-1z-OyB">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bearbeiter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lG-1z-OyB">
                                             <rect key="frame" x="106" y="57" width="80" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="&lt;nicht zugeteilt&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMp-fA-yFo">
-                                            <rect key="frame" x="199" y="57" width="160" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;nicht zugeteilt&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMp-fA-yFo">
+                                            <rect key="frame" x="229" y="57" width="130" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -57,10 +57,16 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="xMp-fA-yFo" firstAttribute="centerY" secondItem="8lG-1z-OyB" secondAttribute="centerY" id="7pF-7a-Vk1"/>
+                                        <constraint firstItem="QGh-yH-P2w" firstAttribute="leading" secondItem="MVo-F7-cte" secondAttribute="trailing" constant="8" symbolic="YES" id="EIh-tt-r2v"/>
                                         <constraint firstItem="QGh-yH-P2w" firstAttribute="trailing" secondItem="cFd-pY-jJe" secondAttribute="trailingMargin" id="HPR-JN-YXz"/>
+                                        <constraint firstItem="QGh-yH-P2w" firstAttribute="leading" secondItem="Icn-If-C5b" secondAttribute="leading" id="Hdi-Y8-BMB"/>
                                         <constraint firstAttribute="bottom" secondItem="MVo-F7-cte" secondAttribute="bottom" id="JSM-mh-AId"/>
+                                        <constraint firstItem="QGh-yH-P2w" firstAttribute="leading" secondItem="8lG-1z-OyB" secondAttribute="leading" id="Lcu-9B-K8P"/>
+                                        <constraint firstItem="QGh-yH-P2w" firstAttribute="top" secondItem="cFd-pY-jJe" secondAttribute="top" constant="35" id="NdB-xI-sKg"/>
+                                        <constraint firstItem="8lG-1z-OyB" firstAttribute="top" secondItem="QGh-yH-P2w" secondAttribute="bottom" constant="20" id="hUi-St-Hib"/>
                                         <constraint firstItem="QGh-yH-P2w" firstAttribute="top" secondItem="Icn-If-C5b" secondAttribute="bottom" constant="3" id="nbW-j4-da2"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Icn-If-C5b" secondAttribute="trailing" constant="20" symbolic="YES" id="nfe-gx-MDJ"/>
+                                        <constraint firstItem="QGh-yH-P2w" firstAttribute="trailing" secondItem="xMp-fA-yFo" secondAttribute="trailing" id="nom-IX-nNF"/>
                                         <constraint firstItem="xMp-fA-yFo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8lG-1z-OyB" secondAttribute="trailing" constant="8" symbolic="YES" id="uHT-an-diF"/>
                                         <constraint firstItem="MVo-F7-cte" firstAttribute="top" secondItem="cFd-pY-jJe" secondAttribute="top" id="xyb-OK-Qow"/>
                                         <constraint firstItem="MVo-F7-cte" firstAttribute="leading" secondItem="cFd-pY-jJe" secondAttribute="leading" constant="8" id="ygi-ac-S0F"/>

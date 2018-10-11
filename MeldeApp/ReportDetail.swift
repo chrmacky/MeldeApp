@@ -14,14 +14,12 @@ class ReportDetail{
     var reportDesc: String?
     var reportProgress: Float
     var reportImage: UIImage?
-    var reportOriginator: UUID
-    var reportOwner: UUID
     
     //MARK: Initialization
-    init?(name: String, desc: String, progress: Float, photo: UIImage?, owner: UUID,originator: UUID) {
+    init?(name: String, desc: String, progress: Float, photo: UIImage?) {
         
         // The name, owner and originator must not be empty
-        guard !name.isEmpty  && !owner.uuidString.isEmpty && !originator.uuidString.isEmpty else {
+        guard !name.isEmpty else {
             return nil
         }
         
@@ -34,7 +32,5 @@ class ReportDetail{
         self.reportDesc = desc
         self.reportProgress = progress
         self.reportImage = photo
-        self.reportOwner = owner
-        self.reportOriginator = originator
     }
 }

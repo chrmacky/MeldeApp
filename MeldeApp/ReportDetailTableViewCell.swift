@@ -20,6 +20,9 @@ class ReportDetailTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        reportProgress.transform = reportProgress.transform.scaledBy(x: 1, y: 4)
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
